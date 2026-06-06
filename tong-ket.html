@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổng Kết - Digital Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <h2 style="color: #4facfe; margin-bottom: 5px; font-size: 24px;">Khai's Portfolio</h2>
+            <p style="color: #b0b5c0; font-size: 12px; margin-top: 0; margin-bottom: 30px;">Digital Technology & AI</p>
+        </div>
+        <div class="sidebar-menu">
+            <a href="index.html" class="nav-item">🏠 Giới thiệu</a>
+            <a href="du-an.html" class="nav-item">🚀 Dự án</a>
+            <a href="tong-ket.html" class="nav-item active">🎯 Tổng kết</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="page-header">
+            <h1 class="neon-text" style="font-size: 2.5rem; margin-bottom: 1rem;">Tổng Kết & Suy Ngẫm</h1>
+            <p style="color: var(--text-secondary); font-size: 1.1rem;">
+                Nhìn lại chặng đường hoàn thiện dự án và hướng đi tương lai.
+            </p>
+        </header>
+
+        <section class="summary-section">
+            <!-- Glass Card: Bài học kinh nghiệm -->
+            <div class="glass-card">
+                <h3 class="neon-text" style="margin-bottom: 1rem; font-size: 1.5rem;">📚 Trải Nghiệm & Bài Học</h3>
+                <p style="color: #b0b5c0; line-height: 1.8; font-size: 15px; margin-top: 15px;">
+                    Qua 6 bài thực hành, tôi đã định hình lại hoàn toàn phương pháp làm việc và học tập trên môi trường số. Từ việc thiết lập thói quen quản lý tệp tin chuẩn kỹ sư phần mềm (Bài 1), nắm bắt chiến lược truy vấn tài liệu học thuật chuyên sâu (Bài 2), cho đến việc làm chủ nghệ thuật giao tiếp với AI qua nguyên tắc 4C (Bài 3). Quá trình cộng tác trực tuyến (Bài 4) và ứng dụng GenAI vào sáng tạo nội dung (Bài 5) đã chứng minh sức mạnh thực sự của công nghệ khi được đặt dưới sự kiểm soát và tư duy phản biện của con người (Bài 6).
+                </p>
+            </div>
+
+            <!-- Glass Card: Khó khăn & Thách thức -->
+            <div class="glass-card">
+                <h3 class="neon-text" style="margin-bottom: 1rem; font-size: 1.5rem;">🔥 Khó Khăn Đã Vượt Qua</h3>
+                <p style="color: #b0b5c0; line-height: 1.8; font-size: 15px; margin-top: 15px;">
+                    Thách thức lớn nhất không nằm ở việc học cách sử dụng công cụ, mà ở việc <strong>kiểm soát chúng</strong>. Tôi đã phải vật lộn với việc đánh giá độ tin cậy của các nguồn tài liệu hàn lâm, xử lý hiện tượng "ảo giác" (hallucination) của AI tạo ảnh, và khắc phục lỗi vỡ font tiếng Việt trên các nền tảng quốc tế. Về mặt tư duy, việc cưỡng lại sự cám dỗ của việc "copy-paste" mã nguồn từ AI để tự mình nghiền ngẫm logic thuật toán thực sự là một cuộc đấu tranh rèn luyện kỷ luật bản thân cực kỳ quan trọng.
+                </p>
+            </div>
+
+            <!-- Glass Card: Định hướng tương lai -->
+            <div class="glass-card">
+                <h3 class="neon-text" style="margin-bottom: 1rem; font-size: 1.5rem;">🌟 Kế Hoạch Ứng Dụng</h3>
+                <p style="color: #b0b5c0; line-height: 1.8; font-size: 15px; margin-top: 15px;">
+                    Hành trang này là nền tảng vững chắc cho chặng đường dài phía trước tại UET. Trong thời gian tới, tôi sẽ áp dụng triệt để kỹ năng viết Prompt (Role-prompting, Chain-of-Thought) để tối ưu hóa và gỡ lỗi (debug) mã nguồn Python và C++ trong môn Cấu trúc dữ liệu & Giải thuật. Quan trọng nhất, tôi cam kết lấy <strong>Liêm chính học thuật</strong> làm kim chỉ nam, xem AI là một "trợ giảng ảo" đắc lực thay vì người làm hộ, đảm bảo tư duy logic của bản thân luôn được mài giũa sắc bén qua từng dòng code.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- tsParticles Container -->
+    <div id="tsparticles"></div>
+
+    <!-- tsParticles Script -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2/tsparticles.preset.links.bundle.min.js"></script>
+    <script>
+        tsParticles.load("tsparticles", {
+            preset: "links",
+            background: {
+                color: { value: "transparent" }
+            },
+            particles: {
+                color: {
+                    value: ["#FFD700", "#4facfe"]
+                },
+                links: {
+                    color: "#1a5f7a",
+                    enable: true,
+                    opacity: 0.6,
+                    distance: 150
+                },
+                move: {
+                    enable: true,
+                    speed: 1.5,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    outModes: "out"
+                },
+                number: {
+                    density: {
+                        enable: true,
+                        area: 800
+                    },
+                    value: 50
+                },
+                opacity: {
+                    value: 0.8
+                },
+                size: {
+                    value: { min: 1, max: 3 }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1 - Digital Portfolio</title>
+    <!-- Trỏ ra thư mục gốc để lấy CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css"> 
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <h2 style="color: #4facfe; margin-bottom: 5px; font-size: 24px;">Khai's Portfolio</h2>
+            <p style="color: #b0b5c0; font-size: 12px; margin-top: 0; margin-bottom: 30px;">Digital Technology & AI</p>
+        </div>
+        <div class="sidebar-menu">
+            <a href="../index.html" class="nav-item">🏠 Giới thiệu</a>
+            <a href="../du-an.html" class="nav-item active">🚀 Dự án</a>
+            <a href="../tong-ket.html" class="nav-item">🎯 Tổng kết</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <header class="task-header">
+            <h1 class="neon-text" style="font-size: 2rem;">Bài 1: Thao tác cơ bản với tệp tin</h1>
+            <a href="../du-an.html" class="glow-btn">⬅ Quay lại Trang Dự án</a>
+        </header>
+
+        <section class="task-content">
+            <!-- Phần 1: Phân tích học thuật -->
+            <div class="step-detail-card glass-panel" style="margin-bottom: 40px; padding: 25px; border-radius: 12px; background: rgba(20, 25, 45, 0.6); border: 1px solid rgba(79, 172, 254, 0.3);">
+                <h3 style="color: #4facfe; margin-bottom: 15px; font-size: 20px;">🧠 Phân tích học thuật (Mức 4)</h3>
+                <p style="color: #b0b5c0; line-height: 1.6; margin-bottom: 15px;">
+                    Thay vì chỉ thao tác tạo và xóa tệp tin một cách máy móc, tôi đã áp dụng tư duy quản lý dự án phần mềm vào bài thực hành này. Đối với một kỹ sư AI tương lai, không gian làm việc khoa học là nền tảng bắt buộc trước khi xử lý các tập dữ liệu lớn. Các quyết định tổ chức tệp tin được dựa trên 3 nguyên tắc:
+                </p>
+                
+                <ul style="color: #b0b5c0; line-height: 1.8; margin-left: 20px;">
+                    <li style="margin-bottom: 10px;">
+                        <strong style="color: #fff;">1. Tư duy phân cấp (Hierarchical Structure):</strong> Tổ chức thư mục theo dạng cây (Tree) - tương tự cấu trúc dữ liệu đang nghiên cứu. Việc chia nhỏ từ thư mục gốc xuống thư mục con (như <code>Tailieu</code>) giúp truy xuất tài nguyên nhanh chóng, dễ dàng mở rộng khi thêm các tập lệnh hay model AI mới sau này.
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <strong style="color: #fff;">2. Cấp thiết về quy chuẩn đặt tên (Naming Convention):</strong> Toàn bộ tệp tin (VD: <code>GhiChuQuanTrong.txt</code>) được đặt tên viết liền không dấu, theo định dạng PascalCase hoặc CamelCase. Đây là thói quen sống còn để tránh các lỗi không đọc được đường dẫn (Path Error) thường gặp khi biên dịch mã nguồn C++ hoặc khi chạy môi trường ảo trong Python.
+                    </li>
+                    <li>
+                        <strong style="color: #fff;">3. Quản trị vòng đời dữ liệu:</strong> Kiểm soát chặt chẽ trạng thái tệp tin. Hiểu rõ bản chất cấp phát và giải phóng vùng nhớ giúp tôi quyết định chính xác khi nào nên xóa tạm thời để dự phòng, và khi nào nên dùng <code>Shift + Delete</code> để dọn dẹp triệt để không gian ổ đĩa cho laptop.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Phần 2: Trình diễn thao tác thực hành -->
+            <div class="glass-card" style="padding: 2rem 0; background: transparent; border: none; box-shadow: none;">
+                <h3 style="color: #4facfe; margin-bottom: 20px; font-size: 22px; padding: 0 2rem;">📸 Trình diễn thao tác thực hành</h3>
+                <div class="steps-timeline">
+                    <div class="step-detail-card glass-panel" style="margin: 0 2rem 30px 2rem;">
+                        <div class="step-header">
+                            <span class="step-number">1</span><h4 class="step-title">Mở File Explorer</h4>
+                        </div>
+                        <p class="step-desc">Khởi động trình quản lý tệp tin File Explorer trên hệ điều hành Windows để bắt đầu phiên làm việc.</p>
+                        <div class="step-image-wrapper"><img src="../assets/images/anh-bao-cao-bai-1/B1.png" alt="Bước 1"></div>
+                    </div>
+
+                    <div class="step-detail-card glass-panel" style="margin: 0 2rem 30px 2rem;">
+                        <div class="step-header">
+                            <span class="step-number">2</span><h4 class="step-title">Truy cập ổ đĩa/thư mục</h4>
+                        </div>
+                        <p class="step-desc">Điều hướng tới ổ đĩa chứa không gian làm việc cá nhân (ví dụ: Windows C:).</p>
+                        <div class="step-image-wrapper"><img src="../assets/images/anh-bao-cao-bai-1/B2.png" alt="Bước 2"></div>
+                    </div>
+
+                    <div class="step-detail-card glass-panel" style="margin: 0 2rem 30px 2rem;">
+                        <div class="step-header">
+                            <span class="step-number">3</span><h4 class="step-title">Tạo thư mục mới</h4>
+                        </div>
+                        <p class="step-desc">Khởi tạo thư mục gốc mang tên ThucHanh_NguyenDucKhai thông qua menu chuột phải (New > Folder).</p>
+                        <div class="step-image-wrapper"><img src="../assets/images/anh-bao-cao-bai-1/B3.png" alt="Bước 3"></div>
+                    </div>
+
+                    <div class="step-detail-card glass-panel" style="margin: 0 2rem 30px 2rem;">
+                        <div class="step-header">
+                            <span class="step-number">4</span><h4 class="step-title">Vào thư mục vừa tạo</h4>
+                        </div>
+                        <p class="step-desc">Mở thư mục gốc vừa khởi tạo để chuẩn bị một không gian trống cho các thao tác lưu trữ tiếp theo.</p>
+                        <div class="step-image-wrapper"><img src="../assets/images/anh-bao-cao-bai-1/B4.png" alt="Bước 4"></div>
+                    </div>
+
+                    <div class="step-detail-card glass-panel" style="margin: 0 2rem 30px 2rem;">
+                        <div class="step-header">
+                            <span class="step-number">5</span><h4 class="step-title">Tạo tệp tin văn bản</h4>
+                        </div>
+                        <p class="step-desc">Khởi tạo một tệp tin văn bản mới định dạng TXT/Word ngay trong thư mục đang làm việc.</p>
+                        <div class="step-image-wrapper"><img src="../assets/images/anh-bao-cao-bai-1/B5.png" alt="Bước 5"></div>
+                    </div>
+
+                    <div class="step-detail-card glass-panel" style="margin: 0 2rem 30px 2rem;">
+                        <div class="step-header">
+                            <span class="step-number">6</span><h4 class="step-title">Đổi tên tệp tin</h4>
+                        </div>
+                        <p class="step-desc">Sử dụng chức năng Rename (F2) để đặt lại tên tệp thành GhiChuQuanTrong.txt theo đúng quy chuẩn không dấu.</p>
+                        <div class="step-image-wrapper"><img src="../assets/images/anh-bao-cao-bai-1/B6.png" alt="Bước 6"></div>
+                    </div>
+
+                    <div class="step-detail-card glass-panel" style="margin: 0 2rem 30px 2rem;">
+                        <div class="step-header">
+                            <span class="step-number">7</span><h4 class="step-title">Tạo thư mục con</h4>
+                        </div>
+                        <p class="step-desc">Tiếp tục khởi tạo thư mục con mang tên "Tailieu" để thực hành kỹ năng phân cấp dữ liệu.</p>
+                        <div class="step-image-wrapper"><img src="../assets/images/anh-bao-cao-bai-1/B7.png" alt="Bước 7"></div>
+                    </div>
+
+                    <div class="step-detail-card glass-panel" style="margin: 0 2rem 30px 2rem;">
+                        <div class="step-header">
+                            <span class="step-number">8</span><h4 class="step-title">Sao chép tệp tin (Copy)</h4>
+                        </div>
+                        <p class="step-desc">Sử dụng tính năng Copy để nhân bản tệp GhiChuQuanTrong.txt, chuẩn bị di chuyển vào thư mục con.</p>
+                        <div class="step-image-wrapper multi-img">
+                            <img src="../assets/images/anh-bao-cao-bai-1/B8.1.png" alt="Bước 8.1">
+                            <img src="../assets/images/anh-bao-cao-bai-1/B8.2.png" alt="Bước 8.2">
+                        </div>
+                    </div>
+
+                    <div class="step-detail-card glass-panel" style="margin: 0 2rem 30px 2rem;">
+                        <div class="step-header">
+                            <span class="step-number">9</span><h4 class="step-title">Di chuyển tệp tin (Cut)</h4>
+                        </div>
+                        <p class="step-desc">Dán tệp đã sao chép vào thư mục Tailieu, đồng thời đổi tên thành Dichuyen.txt để minh họa thao tác di chuyển.</p>
+                        <div class="step-image-wrapper multi-img">
+                            <img src="../assets/images/anh-bao-cao-bai-1/B9.1.png" alt="Bước 9.1">
+                            <img src="../assets/images/anh-bao-cao-bai-1/B9.2.png" alt="Bước 9.2">
+                        </div>
+                    </div>
+
+                    <div class="step-detail-card glass-panel" style="margin: 0 2rem 30px 2rem;">
+                        <div class="step-header">
+                            <span class="step-number">10</span><h4 class="step-title">Xóa tệp tin</h4>
+                        </div>
+                        <p class="step-desc">Thực hiện lệnh Delete để đưa tệp tin không còn sử dụng vào Recycle Bin (Thùng rác), một hình thức xóa tạm thời.</p>
+                        <div class="step-image-wrapper"><img src="../assets/images/anh-bao-cao-bai-1/B10.png" alt="Bước 10"></div>
+                    </div>
+
+                    <div class="step-detail-card glass-panel" style="margin: 0 2rem 30px 2rem;">
+                        <div class="step-header">
+                            <span class="step-number">11</span><h4 class="step-title">Xóa vĩnh viễn</h4>
+                        </div>
+                        <p class="step-desc">Sử dụng tổ hợp phím Shift + Delete để giải phóng hoàn toàn không gian bộ nhớ mà không đưa qua Thùng rác.</p>
+                        <div class="step-image-wrapper"><img src="../assets/images/anh-bao-cao-bai-1/B11.png" alt="Bước 11"></div>
+                    </div>
+
+                    <div class="step-detail-card glass-panel" style="margin: 0 2rem 30px 2rem;">
+                        <div class="step-header">
+                            <span class="step-number">12</span><h4 class="step-title">Khôi phục từ Thùng rác</h4>
+                        </div>
+                        <p class="step-desc">Truy cập Recycle Bin và sử dụng tính năng Restore để lấy lại an toàn tệp tin đã bị xóa nhầm ở bước 10.</p>
+                        <div class="step-image-wrapper multi-img">
+                            <img src="../assets/images/anh-bao-cao-bai-1/B12.1.png" alt="Bước 12.1">
+                            <img src="../assets/images/anh-bao-cao-bai-1/B12.2.png" alt="Bước 12.2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- tsParticles Container -->
+    <div id="tsparticles"></div>
+
+    <!-- tsParticles Script -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2/tsparticles.preset.links.bundle.min.js"></script>
+    <script>
+        tsParticles.load("tsparticles", {
+            preset: "links",
+            background: {
+                color: { value: "transparent" }
+            },
+            particles: {
+                color: {
+                    value: ["#FFD700", "#4facfe"]
+                },
+                links: {
+                    color: "#1a5f7a",
+                    enable: true,
+                    opacity: 0.6,
+                    distance: 150
+                },
+                move: {
+                    enable: true,
+                    speed: 1.5,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    outModes: "out"
+                },
+                number: {
+                    density: {
+                        enable: true,
+                        area: 800
+                    },
+                    value: 50
+                },
+                opacity: {
+                    value: 0.8
+                },
+                size: {
+                    value: { min: 1, max: 3 }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

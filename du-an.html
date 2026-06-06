@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự Án - Digital Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <h2 style="color: #4facfe; margin-bottom: 5px; font-size: 24px;">Khai's Portfolio</h2>
+            <p style="color: #b0b5c0; font-size: 12px; margin-top: 0; margin-bottom: 30px;">Digital Technology & AI</p>
+        </div>
+        <div class="sidebar-menu">
+            <a href="index.html" class="nav-item">🏠 Giới thiệu</a>
+            <a href="du-an.html" class="nav-item active">🚀 Dự án</a>
+            <a href="tong-ket.html" class="nav-item">🎯 Tổng kết</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="page-header">
+            <h1 class="neon-text" style="font-size: 2.5rem; margin-bottom: 1rem;">Danh sách Bài tập / Dự án</h1>
+            <p style="color: var(--text-secondary); font-size: 1.1rem;">
+                Tổng hợp 6 bài tập thành phần thể hiện năng lực ứng dụng công nghệ số và trí tuệ nhân tạo.
+            </p>
+        </header>
+
+        <section class="project-list">
+            <!-- Project 1 -->
+            <a href="tasks/bai-1-quan-ly.html" class="project-item">
+                <div class="icon">📄</div>
+                <div class="details">
+                    <h3>Bài 1: Thao tác cơ bản với tệp tin và thư mục</h3>
+                    <p>Trình bày cấu trúc thư mục tối ưu và quy tắc đặt tên tệp đã thiết lập.</p>
+                </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="tasks/bai-2-tim-kiem.html" class="project-item">
+                <div class="icon">📄</div>
+                <div class="details">
+                    <h3>Bài 2: Tìm kiếm và đánh giá thông tin học thuật</h3>
+                    <p>Ứng dụng toán tử nâng cao và xây dựng bảng đánh giá nguồn tin chuyên sâu.</p>
+                </div>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="tasks/bai-3-prompt.html" class="project-item">
+                <div class="icon">📄</div>
+                <div class="details">
+                    <h3>Bài 3: Viết Prompt hiệu quả cho các tác vụ học tập</h3>
+                    <p>So sánh quá trình tinh chỉnh Prompt ban đầu so với Prompt cải tiến.</p>
+                </div>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="tasks/bai-4-hop-tac.html" class="project-item">
+                <div class="icon">📄</div>
+                <div class="details">
+                    <h3>Bài 4: Sử dụng công cụ hợp tác trực tuyến</h3>
+                    <p>Minh chứng sử dụng công cụ quản lý dự án nhóm và điều phối công việc.</p>
+                </div>
+            </a>
+
+            <!-- Project 5 -->
+            <a href="tasks/bai-5-ai-tao-sinh.html" class="project-item">
+                <div class="icon">📄</div>
+                <div class="details">
+                    <h3>Bài 5: Sử dụng AI tạo sinh để hỗ trợ sáng tạo nội dung</h3>
+                    <p>Sản phẩm số hoàn thiện (hình ảnh/bài viết) có sự hỗ trợ của Generative AI.</p>
+                </div>
+            </a>
+
+            <!-- Project 6 -->
+            <a href="tasks/bai-6-dao-duc.html" class="project-item">
+                <div class="icon">📄</div>
+                <div class="details">
+                    <h3>Bài 6: Sử dụng AI có trách nhiệm trong học tập & nghiên cứu</h3>
+                    <p>Bộ nguyên tắc cá nhân về sử dụng AI có đạo đức và minh bạch.</p>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <!-- tsParticles Container -->
+    <div id="tsparticles"></div>
+
+    <!-- tsParticles Script -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2/tsparticles.preset.links.bundle.min.js"></script>
+    <script>
+        tsParticles.load("tsparticles", {
+            preset: "links",
+            background: {
+                color: { value: "transparent" }
+            },
+            particles: {
+                color: {
+                    value: ["#FFD700", "#4facfe"]
+                },
+                links: {
+                    color: "#1a5f7a",
+                    enable: true,
+                    opacity: 0.6,
+                    distance: 150
+                },
+                move: {
+                    enable: true,
+                    speed: 1.5,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    outModes: "out"
+                },
+                number: {
+                    density: {
+                        enable: true,
+                        area: 800
+                    },
+                    value: 50
+                },
+                opacity: {
+                    value: 0.8
+                },
+                size: {
+                    value: { min: 1, max: 3 }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3 - Digital Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/style.css"> 
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <h2 style="color: #4facfe; margin-bottom: 5px; font-size: 24px;">Khai's Portfolio</h2>
+            <p style="color: #b0b5c0; font-size: 12px; margin-top: 0; margin-bottom: 30px;">Digital Technology & AI</p>
+        </div>
+        <div class="sidebar-menu">
+            <a href="../index.html" class="nav-item">🏠 Giới thiệu</a>
+            <a href="../du-an.html" class="nav-item active">🚀 Dự án</a>
+            <a href="../tong-ket.html" class="nav-item">🎯 Tổng kết</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <header class="task-header">
+            <h1 class="neon-text" style="font-size: 2rem;">Bài 3: Tối ưu hóa Prompt Engineering</h1>
+            <a href="../du-an.html" class="glow-btn">⬅ Quay lại Trang Dự án</a>
+        </header>
+
+        <section class="task-content">
+            <div class="prompt-section glass-panel" style="padding: 30px; border-radius: 12px; border: none; background: transparent; box-shadow: none;">
+                <h3 class="section-title">🎯 I. Phân tích Tác vụ Học tập</h3>
+                <div class="grid-3-cols">
+                    <div class="info-card">
+                        <h4><span style="font-size: 24px;">📊</span> Tác vụ 1: Tóm tắt học thuật</h4>
+                        <p><strong>Chủ đề:</strong> Cấu trúc dữ liệu Heap.</p>
+                        <p><strong>Mục tiêu:</strong> Nắm bắt nhanh đặc tính cốt lõi (Min/Max Heap, Big O).</p>
+                        <p><strong>Thách thức:</strong> Giữ độ chính xác kỹ thuật mà không sa đà vào tiểu tiết lan man.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4><span style="font-size: 24px;">🧠</span> Tác vụ 2: Giải thích khái niệm</h4>
+                        <p><strong>Chủ đề:</strong> Trị riêng & Vector riêng (Đại số tuyến tính).</p>
+                        <p><strong>Mục tiêu:</strong> Biến khái niệm trừu tượng thành hình ảnh trực quan.</p>
+                        <p><strong>Thách thức:</strong> Tránh các định nghĩa khô khan, buộc AI phải liên kết lý thuyết với ứng dụng thực tế.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4><span style="font-size: 24px;">💻</span> Tác vụ 3: Tạo câu hỏi ôn tập</h4>
+                        <p><strong>Chủ đề:</strong> Con trỏ & Cấp phát động (C++).</p>
+                        <p><strong>Mục tiêu:</strong> Kiểm tra mức độ hiểu sâu và kỹ năng debug.</p>
+                        <p><strong>Thách thức:</strong> Ngăn AI tạo trắc nghiệm quá dễ, điều hướng sang dạng "phát hiện lỗi code" (Bug hunting) thực tế.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prompt-section glass-panel" style="padding: 30px; border-radius: 12px; border: none; background: transparent; box-shadow: none;">
+                <h3 class="section-title">⚙️ II. Quá trình Tiến hóa Prompt (Case Studies)</h3>
+                
+                <div class="prompt-evolution">
+                    <h4 style="color: #fff; margin-bottom: 10px;">Case Study 1: Giải thích khái niệm (Trị riêng & Vector riêng)</h4>
+                    <div class="prompt-box prompt-basic">
+                        <span class="prompt-label label-basic">Prompt Cơ Bản</span><br>
+                        Trị riêng và vector riêng là gì?
+                    </div>
+                    <div class="prompt-box prompt-advanced">
+                        <span class="prompt-label label-advanced">Prompt Nâng Cao (Chain-of-thought & Context)</span><br>
+                        Bạn là một chuyên gia về Toán học ứng dụng trong AI. Khái niệm Trị riêng và Vector riêng rất khó hiểu đối với người mới bắt đầu. Hãy giải thích bằng cách suy luận từng bước:<br><br>
+                        - Bước 1: Dùng một ví dụ ẩn dụ trực quan trong đời sống (vd: kéo giãn tấm cao su) để mô tả bản chất phép biến đổi tuyến tính.<br>
+                        - Bước 2: Trình bày phương trình cốt lõi Ax = λx. Giải thích chi tiết A, x, và λ đóng vai trò gì trong ví dụ ở Bước 1.<br>
+                        - Bước 3: Giải thích ngắn gọn tại sao khái niệm này lại cực kỳ quan trọng trong Machine Learning (ví dụ: thuật toán PCA).
+                    </div>
+                </div>
+
+                <div class="prompt-evolution">
+                    <h4 style="color: #fff; margin-bottom: 10px;">Case Study 2: Tạo bộ câu hỏi (Con trỏ C++)</h4>
+                    <div class="prompt-box prompt-basic">
+                        <span class="prompt-label label-basic">Prompt Cơ Bản</span><br>
+                        Tạo bài tập về con trỏ trong C++.
+                    </div>
+                    <div class="prompt-box prompt-advanced">
+                        <span class="prompt-label label-advanced">Prompt Nâng Cao (Constraint & Few-shot concept)</span><br>
+                        Cương vị của bạn là người ra đề thi kỹ năng lập trình C++. Hãy tạo một bài test về 'Con trỏ và Cấp phát động'. Yêu cầu cấu trúc:<br><br>
+                        - Phần 1: 2 câu hỏi phát hiện lỗi sai (Bug hunting). Đưa ra đoạn code C++ ngắn chứa lỗi nguy hiểm (Memory Leak / Dangling Pointer) và yêu cầu tìm lỗi.<br>
+                        - Phần 2: 1 yêu cầu viết hàm ngắn (Truyền tham chiếu bằng con trỏ).<br><br>
+                        QUY TẮC: Trình bày toàn bộ câu hỏi trước. Tuyệt đối không đưa ra lời giải ngay. Tạo một phần cách biệt có tiêu đề "ĐÁP ÁN VÀ GIẢI THÍCH" ở cuối cùng.
+                    </div>
+                </div>
+            </div>
+
+            <div class="prompt-section glass-panel" style="padding: 30px; border-radius: 12px; border: none; background: transparent; box-shadow: none;">
+                <h3 class="section-title">📈 III. Phân tích và Đánh giá Kết quả</h3>
+                <div class="glass-table-container">
+                    <table class="glass-table">
+                        <tr>
+                            <th>Tiêu chí</th>
+                            <th>Prompt Cơ bản</th>
+                            <th>Prompt Cải tiến</th>
+                            <th>Prompt Nâng cao</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Độ chi tiết & Thông tin</strong></td>
+                            <td>Chung chung, thiếu chiều sâu. Bỏ sót thông số quan trọng (như Big O).</td>
+                            <td>Đầy đủ thông tin cơ bản. Trình bày có tổ chức (gạch đầu dòng).</td>
+                            <td><strong style="color:#4facfe">Chuyên sâu, chắt lọc. Khai thác ứng dụng thực tế và AI.</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tính cấu trúc (Format)</strong></td>
+                            <td>Một khối văn bản dài (wall of text), khó đọc.</td>
+                            <td>Đạt mức tiêu chuẩn, giải quyết được nhu cầu tra cứu tĩnh.</td>
+                            <td><strong style="color:#4facfe">Bố cục xuất sắc. Dùng Bảng biểu, phân chia rõ ràng để ôn tập trực tiếp.</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Chất lượng đầu ra</strong></td>
+                            <td>Khô khan, mang tính "trả bài" Wikipedia.</td>
+                            <td>Dễ nhìn, dễ đọc hơn bản cơ bản.</td>
+                            <td><strong style="color:#4facfe">Thể hiện sắc thái chuyên gia. Dẫn dắt tư duy từ ẩn dụ đến công thức, từ nguyên lý đến lỗi thực hành.</strong></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="info-card" style="margin-top: 20px;">
+                    <h4 style="color: #4facfe;">💡 Phân tích nguyên nhân hiệu quả:</h4>
+                    <ul style="color: #b0b5c0; line-height: 1.8; margin-left: 20px;">
+                        <li><strong>Role-prompting:</strong> Gán vai trò "chuyên gia" chuyển đổi ngôn ngữ từ thông tin thuần túy sang mức độ sư phạm.</li>
+                        <li><strong>Chain-of-thought:</strong> Chia nhỏ tư duy theo bước giúp kiểm soát luồng thông tin, tránh bị ngợp bởi lý thuyết hàn lâm.</li>
+                        <li><strong>Format Constraints:</strong> Ràng buộc "không đưa lời giải ngay" và định hình form "bug hunting" khắc phục tính rập khuôn và "cầm đèn chạy trước ô tô" của AI.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="prompt-section glass-panel" style="padding: 30px; border-radius: 12px; border: none; background: transparent; box-shadow: none;">
+                <h3 class="section-title">💎 IV. Bộ Nguyên tắc "4C" Viết Prompt</h3>
+                <div class="grid-3-cols">
+                    <div class="info-card">
+                        <h4>1. Clear & Specific</h4>
+                        <p>Tránh từ ngữ mơ hồ. Thay vì "tạo bài tập", hãy chỉ định "tạo 2 câu hỏi phát hiện lỗi memory leak trong C++". Sự cụ thể quyết định độ sâu.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>2. Context & Persona</h4>
+                        <p>Cấp cho AI một nhân dạng. Ngữ cảnh (Gia sư toán vs Kỹ sư vật lý) giúp tinh chỉnh giọng văn và từ vựng phù hợp với người đọc.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>3. Constructive Formatting</h4>
+                        <p>Chủ động yêu cầu định dạng: "Dùng bảng", "Dùng Markdown", "In đậm keyword" để tiết kiệm thời gian tổng hợp tài liệu.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>4. Chain-of-Thought</h4>
+                        <p>Với vấn đề phức tạp, hãy chia Step 1, Step 2... Kỹ thuật này ép AI suy luận có hệ thống, giảm thiểu "ảo giác" (hallucination).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- tsParticles Container -->
+    <div id="tsparticles"></div>
+
+    <!-- tsParticles Script -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2/tsparticles.preset.links.bundle.min.js"></script>
+    <script>
+        tsParticles.load("tsparticles", {
+            preset: "links",
+            background: {
+                color: { value: "transparent" }
+            },
+            particles: {
+                color: {
+                    value: ["#FFD700", "#4facfe"]
+                },
+                links: {
+                    color: "#1a5f7a",
+                    enable: true,
+                    opacity: 0.6,
+                    distance: 150
+                },
+                move: {
+                    enable: true,
+                    speed: 1.5,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    outModes: "out"
+                },
+                number: {
+                    density: {
+                        enable: true,
+                        area: 800
+                    },
+                    value: 50
+                },
+                opacity: {
+                    value: 0.8
+                },
+                size: {
+                    value: { min: 1, max: 3 }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

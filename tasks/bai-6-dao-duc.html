@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6 - Digital Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/style.css"> 
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <h2 style="color: #4facfe; margin-bottom: 5px; font-size: 24px;">Khai's Portfolio</h2>
+            <p style="color: #b0b5c0; font-size: 12px; margin-top: 0; margin-bottom: 30px;">Digital Technology & AI</p>
+        </div>
+        <div class="sidebar-menu">
+            <a href="../index.html" class="nav-item">🏠 Giới thiệu</a>
+            <a href="../du-an.html" class="nav-item active">🚀 Dự án</a>
+            <a href="../tong-ket.html" class="nav-item">🎯 Tổng kết</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <header class="task-header">
+            <h1 class="neon-text" style="font-size: 2rem;">Bài 6: AI Có Trách Nhiệm</h1>
+            <a href="../du-an.html" class="glow-btn">⬅ Quay lại Trang Dự án</a>
+        </header>
+
+        <section class="task-content">
+            <div class="report-section">
+                <div class="glass-card" style="text-align: center; margin-bottom: 40px; background: linear-gradient(145deg, rgba(20,25,45,0.8), rgba(10,15,30,0.9));">
+                    <h2 style="color: #fff; letter-spacing: 1px; margin-bottom: 10px;">BÁO CÁO: SỬ DỤNG AI CÓ TRÁCH NHIỆM VÀ ĐẠO ĐỨC TRONG HỌC THUẬT</h2>
+                    <p style="color: #4facfe; font-size: 16px;">Đại học Quốc gia Hà Nội - Trường Đại học Công nghệ (UET-VNU)</p>
+                    <p style="color: #b0b5c0; font-size: 14px; margin-top: 10px;">Thực hiện: <strong>Nguyễn Đức Khải</strong> | Lớp: K70 A15 | MSV: 25022894</p>
+                </div>
+
+                <h3 class="section-title">🔍 I. Nghiên cứu chính sách sử dụng AI trong học thuật</h3>
+                <div class="glass-card">
+                    <ul>
+                        <li><strong style="color:#fff;">Khuyến khích sử dụng như một công cụ hỗ trợ:</strong> AI được xem như "trợ giảng ảo" giúp sinh viên tìm kiếm tài liệu, giải thích khái niệm phức tạp (như Cấu trúc dữ liệu và Giải thuật), hoặc hỗ trợ gỡ lỗi (debug).</li>
+                        <li><strong style="color:#fff;">Nghiêm cấm đạo văn và gian lận:</strong> Sao chép nguyên văn sản phẩm do AI tạo ra để nộp mà không trích dẫn là vi phạm liêm chính học thuật. Sinh viên phải chịu trách nhiệm cuối cùng về tính chính xác.</li>
+                        <li><strong style="color:#fff;">Yêu cầu sự minh bạch:</strong> Mọi can thiệp của AI vào quá trình hình thành ý tưởng, viết code hay dịch thuật đều phải được trích dẫn và giải trình rõ ràng.</li>
+                        <li><strong style="color:#fff;">So sánh quốc tế:</strong> So với MIT hay Stanford (chi tiết cho từng bộ môn), chính sách tại Việt Nam đang trong giai đoạn chuyển tiếp, chủ yếu áp dụng khung quy định chung về Liêm chính học thuật.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="report-section">
+                <h3 class="section-title">💻 II. Thực hiện nhiệm vụ học tập với sự hỗ trợ của AI</h3>
+                <p style="color: #b0b5c0; margin-bottom: 20px;"><strong>Nhiệm vụ:</strong> Tổng hợp tài liệu và lập trình minh họa Cây nhị phân tìm kiếm (BST) bằng C++.</p>
+                
+                <div class="grid-cols-2">
+                    <div class="glass-card">
+                        <h4 style="color: #4facfe;">Lượt Prompt 1: Lý thuyết thuật toán</h4>
+                        <div class="prompt-box">
+                            "Đóng vai là một giáo sư khoa học máy tính, hãy giải thích khái niệm Cây nhị phân tìm kiếm (BST) và các đặc tính của nó một cách dễ hiểu nhất, kèm theo độ phức tạp thời gian cho các thao tác cơ bản."
+                        </div>
+                        <div class="ai-response">
+                            <strong>AI trả lời:</strong> BST là cấu trúc dạng cây, mỗi node có tối đa 2 node con. Node trái nhỏ hơn node cha, node phải lớn hơn node cha.<br>
+                            - Độ phức tạp trung bình: O(log n).<br>
+                            - Xấu nhất (cây bị lệch): O(n).
+                        </div>
+                    </div>
+
+                    <div class="glass-card">
+                        <h4 style="color: #4facfe;">Lượt Prompt 2: Mã nguồn (Code)</h4>
+                        <div class="prompt-box">
+                            "Viết một khung mã nguồn C++ minh họa cách cài đặt cấu trúc Node của BST và hàm chèn (insert) một giá trị mới vào cây."
+                        </div>
+                        <div class="ai-response">
+                            <strong>AI trả lời:</strong> Cung cấp mã nguồn C++ sử dụng `struct Node` với con trỏ left/right. Viết hàm `insert` đệ quy để chèn giá trị vào đúng vị trí theo đặc tính BST.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="human-touch" style="margin-top: 25px;">
+                    <h4 style="color: #f59e0b; margin-bottom: 10px;">Đánh giá, Chỉnh sửa & Trích dẫn</h4>
+                    <ul style="margin-bottom: 10px;">
+                        <li><strong>Kiểm chứng:</strong> Lý thuyết O(log n) chính xác. Cần tự bổ sung "Cây cân bằng" (AVL) để khắc phục nhược điểm O(n).</li>
+                        <li><strong>Tinh chỉnh Code:</strong> Code AI dùng con trỏ thô (raw pointers). Tôi đã tự thêm hàm Destructor giải phóng bộ nhớ và comment tiếng Việt để chứng minh hiểu rõ luồng đệ quy.</li>
+                        <li><strong>Trích dẫn mẫu:</strong> "Tài liệu này được tổng hợp với sự hỗ trợ của Gemini. Phần mã nguồn C++ ban đầu do AI gợi ý, sau đó đã được tác giả (Nguyễn Đức Khải) kiểm tra, tối ưu và bổ sung hàm quản lý bộ nhớ."</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="report-section">
+                <h3 class="section-title">⚖️ III. Phân tích các vấn đề đạo đức liên quan</h3>
+                <div class="grid-cols-3">
+                    <div class="glass-card">
+                        <h4 style="color: #ef4444;">1. Ranh giới gian lận</h4>
+                        <p>Hỗ trợ hợp lý là dùng AI để vượt qua "trang giấy trắng", tìm ý tưởng, gỡ lỗi bug. Gian lận xảy ra khi sao chép toàn bộ code thuật toán khó và nộp dưới tên mình mà không hề hiểu logic bên trong, làm mất đi ý nghĩa của việc đánh giá năng lực.</p>
+                    </div>
+                    <div class="glass-card">
+                        <h4 style="color: #3b82f6;">2. Sở hữu trí tuệ</h4>
+                        <p>Bản thân AI không có tư cách tác giả. Việc sinh viên tự nhận sản phẩm của AI là của mình là chiếm đoạt trí tuệ. Trích dẫn minh bạch giúp bảo vệ sinh viên khỏi cáo buộc đạo văn và tôn trọng nguyên tắc học thuật.</p>
+                    </div>
+                    <div class="glass-card">
+                        <h4 style="color: #10b981;">3. Tác động kỹ năng</h4>
+                        <p>Phụ thuộc AI làm thui chột tư duy phản biện và kỹ năng giải quyết vấn đề. Khi AI fix mọi lỗi code, sinh viên mất khả năng tự phân tích hệ thống. Nếu dùng đúng, AI lại là "người thầy" tuyệt vời cá nhân hóa lộ trình học.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="report-section">
+                <h3 class="section-title">📜 IV. Bộ nguyên tắc cá nhân về sử dụng AI</h3>
+                <div class="grid-cols-3">
+                    <div class="glass-card" style="border-top: 3px solid #4facfe;">
+                        <strong style="color: #4facfe; font-size: 20px;">01.</strong>
+                        <h4>Cố vấn, không làm thay</h4>
+                        <p>Chỉ dùng AI để gợi ý hướng giải quyết, tuyệt đối không yêu cầu AI viết toàn bộ bài làm để nộp.</p>
+                    </div>
+                    <div class="glass-card" style="border-top: 3px solid #4facfe;">
+                        <strong style="color: #4facfe; font-size: 20px;">02.</strong>
+                        <h4>Hiểu trước khi dùng</h4>
+                        <p>Không bao giờ chèn đoạn code C++/Python do AI viết vào bài nếu chưa hiểu 100% logic từng dòng lệnh.</p>
+                    </div>
+                    <div class="glass-card" style="border-top: 3px solid #4facfe;">
+                        <strong style="color: #4facfe; font-size: 20px;">03.</strong>
+                        <h4>Kiểm chứng thông tin</h4>
+                        <p>Luôn Fact-Check, đối chiếu công thức toán, độ phức tạp thuật toán AI đưa ra với giáo trình chính thống.</p>
+                    </div>
+                    <div class="glass-card" style="border-top: 3px solid #4facfe;">
+                        <strong style="color: #4facfe; font-size: 20px;">04.</strong>
+                        <h4>Minh bạch trích dẫn</h4>
+                        <p>Nếu dùng đoạn văn, ý tưởng lớn hay cấu trúc code từ AI, phải ghi rõ công cụ và mức độ can thiệp.</p>
+                    </div>
+                    <div class="glass-card" style="border-top: 3px solid #4facfe;">
+                        <strong style="color: #4facfe; font-size: 20px;">05.</strong>
+                        <h4>Bảo vệ dữ liệu</h4>
+                        <p>Không nhập thông tin nhạy cảm, bài thi chưa công bố hoặc mã nguồn bảo mật vào khung chat của AI.</p>
+                    </div>
+                    <div class="glass-card" style="border-top: 3px solid #4facfe;">
+                        <strong style="color: #4facfe; font-size: 20px;">06.</strong>
+                        <h4>Tư duy độc lập</h4>
+                        <p>Luôn tự suy nghĩ và phác thảo dàn ý trước khi tham vấn AI để không bị "đóng khung" bởi máy móc.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="report-section">
+                <h3 class="section-title">🌟 V. Infographic: Cẩm nang sinh viên</h3>
+                
+                <div class="glass-card" style="text-align: center; padding: 25px;">
+                    <h4 style="color: #4facfe; margin-bottom: 20px; font-size: 20px; letter-spacing: 1px;">SỬ DỤNG AI TRONG HỌC THUẬT - ĐẠO ĐỨC & TRÁCH NHIỆM</h4>
+                    
+                    <div style="overflow: hidden; border-radius: 12px; border: 2px solid rgba(79, 172, 254, 0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.5); background: #fff;">
+                        <img src="../assets/images/anh_bao_cao_bai_6/h1.png" alt="Infographic Đạo đức AI" style="width: 100%; display: block; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    
+                    <p style="color: #94a3b8; font-size: 14px; font-style: italic; margin-top: 20px;">
+                        Thiết kế bởi Nguyễn Đức Khải - Tuân thủ nguyên tắc Liêm chính học thuật
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- tsParticles Container -->
+    <div id="tsparticles"></div>
+
+    <!-- tsParticles Script -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2/tsparticles.preset.links.bundle.min.js"></script>
+    <script>
+        tsParticles.load("tsparticles", {
+            preset: "links",
+            background: {
+                color: { value: "transparent" }
+            },
+            particles: {
+                color: {
+                    value: ["#FFD700", "#4facfe"]
+                },
+                links: {
+                    color: "#1a5f7a",
+                    enable: true,
+                    opacity: 0.6,
+                    distance: 150
+                },
+                move: {
+                    enable: true,
+                    speed: 1.5,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    outModes: "out"
+                },
+                number: {
+                    density: {
+                        enable: true,
+                        area: 800
+                    },
+                    value: 50
+                },
+                opacity: {
+                    value: 0.8
+                },
+                size: {
+                    value: { min: 1, max: 3 }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

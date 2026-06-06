@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5 - Digital Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/style.css"> 
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <h2 style="color: #4facfe; margin-bottom: 5px; font-size: 24px;">Khai's Portfolio</h2>
+            <p style="color: #b0b5c0; font-size: 12px; margin-top: 0; margin-bottom: 30px;">Digital Technology & AI</p>
+        </div>
+        <div class="sidebar-menu">
+            <a href="../index.html" class="nav-item">🏠 Giới thiệu</a>
+            <a href="../du-an.html" class="nav-item active">🚀 Dự án</a>
+            <a href="../tong-ket.html" class="nav-item">🎯 Tổng kết</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <header class="task-header">
+            <h1 class="neon-text" style="font-size: 2rem;">Bài 5: AI Tạo Sinh Trong Sáng Tạo</h1>
+            <a href="../du-an.html" class="glow-btn">⬅ Quay lại Trang Dự án</a>
+        </header>
+
+        <section class="task-content">
+            <div class="report-section">
+                <div class="glass-card" style="text-align: center; margin-bottom: 40px; background: linear-gradient(145deg, rgba(20,25,45,0.8), rgba(10,15,30,0.9));">
+                    <h2 style="color: #fff; letter-spacing: 1px; margin-bottom: 10px;">BÁO CÁO: ỨNG DỤNG AI TẠO SINH TRONG SÁNG TẠO NỘI DUNG SỐ</h2>
+                    <p style="color: #4facfe; font-size: 16px;">Đại học Quốc gia Hà Nội - Trường Đại học Công nghệ (UET)</p>
+                </div>
+
+                <h3 class="section-title">🚀 I. Giới thiệu dự án</h3>
+                <div class="glass-card" style="margin-bottom: 20px;">
+                    <h4 style="color: #4facfe;">1. Mục tiêu dự án</h4>
+                    <p>Dự án này tập trung sáng tạo một bài Blog Article kết hợp hình ảnh minh họa với chủ đề: <strong>"Trí tuệ nhân tạo (AI): Chiến binh mới trong cuộc chiến chống rác thải nhựa"</strong>.</p>
+                    <p>Mục tiêu cốt lõi là giải thích trực quan, dễ hiểu cho đại chúng về cách công nghệ Thị giác máy tính (Computer Vision) tự động hóa quá trình phân loại rác thải. Thông qua dự án, tôi kỳ vọng làm chủ và tối ưu hóa workflow sáng tạo nội dung số bằng cách kết hợp hài hòa giữa AI và tư duy logic của con người.</p>
+                </div>
+
+                <h4 style="color: #fff; margin-bottom: 15px; margin-top: 30px;">2. Các công cụ AI tạo sinh được sử dụng</h4>
+                <div class="grid-cols-3">
+                    <div class="glass-card">
+                        <span class="tool-badge badge-gemini">Văn bản</span>
+                        <h4>Google Gemini</h4>
+                        <p><strong>Vai trò:</strong> "Trợ lý nội dung".</p>
+                        <p>Dùng để phá vỡ giới hạn ý tưởng, thiết lập dàn ý logic, giải thích các thuật ngữ kỹ thuật (Neural Network, Data Labeling) bằng ngôn ngữ đại chúng và hỗ trợ viết nháp.</p>
+                    </div>
+                    <div class="glass-card">
+                        <span class="tool-badge badge-dalle">Hình ảnh</span>
+                        <h4>DALL-E 3</h4>
+                        <p><strong>Vai trò:</strong> "Nguồn tài nguyên thị giác".</p>
+                        <p>Chuyển đổi câu lệnh (prompt) thành hình ảnh minh họa trực quan, tái hiện khung cảnh cánh tay robot phân loại rác với độ chân thực cao (photorealistic).</p>
+                    </div>
+                    <div class="glass-card">
+                        <span class="tool-badge badge-canva">Thiết kế</span>
+                        <h4>Canva AI / Magic Design</h4>
+                        <p><strong>Vai trò:</strong> "Nhà thiết kế dàn trang".</p>
+                        <p>Nhận diện chủ thể hình ảnh, đề xuất bố cục (layout) và thiết kế hoàn thiện Ảnh bìa (Blog Cover) chuẩn mực về typography và màu sắc.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="report-section">
+                <h3 class="section-title">⚙️ II. Chi tiết quá trình sáng tạo và tích hợp</h3>
+                
+                <div class="glass-card" style="margin-bottom: 20px;">
+                    <h4>Giai đoạn 1: Xây dựng nội dung với Gemini</h4>
+                    <p><strong>Mục tiêu:</strong> Xây dựng khung nội dung logic và viết bản thảo bài viết.</p>
+                    <div class="prompt-box">
+                        <strong>Prompt (Dàn ý):</strong> "Tôi là sinh viên ngành AI, hãy lập dàn ý cho bài viết về ứng dụng Computer Vision trong phân loại rác thải nhựa. Yêu cầu chia làm 3 phần chính: Cơ chế hoạt động, Quá trình huấn luyện mô hình và Hiệu quả thực tế."
+                    </div>
+                    <div style="margin: 15px 0; text-align: center; overflow: hidden; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <img src="../assets/images/anh_bao_cao_bai_5/h1.png" alt="Minh chứng Gemini" style="width: 100%; display: block;">
+                    </div>
+                    <div class="human-touch">
+                        <strong style="color: #f59e0b;">Đóng góp cá nhân:</strong> Văn bản của Gemini đôi khi bị lặp ý. Tôi đã tự tay viết lại, giải thích rõ hơn về cách máy tính nhìn hình ảnh thông qua các ma trận điểm ảnh và cách trích xuất đặc trưng.
+                    </div>
+                </div>
+
+                <div class="glass-card" style="margin-bottom: 20px;">
+                    <h4>Giai đoạn 2: Tạo hình ảnh tư liệu với DALL-E 3</h4>
+                    <p><strong>Mục tiêu:</strong> Tạo hình ảnh minh họa mang tính kỹ thuật cao mà ảnh mạng (stock) không có sẵn.</p>
+                    <div class="prompt-box">
+                        <strong>Prompt:</strong> "A high-tech recycling factory interior, close-up of a robotic arm with a camera sensor identifying plastic bottles on a fast-moving conveyor belt. Realistic style, cinematic lighting, focused on the sensor's blue glowing light, 16:9 ratio."
+                    </div>
+                    <div style="margin: 15px 0; text-align: center; overflow: hidden; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <img src="../assets/images/anh_bao_cao_bai_5/h2.png" alt="Minh chứng DALL-E 3" style="width: 100%; display: block;">
+                    </div>
+                    <div class="human-touch">
+                        <strong style="color: #f59e0b;">Đóng góp cá nhân:</strong> AI tạo ảnh thường gặp lỗi ký tự (hallucination) trên nhãn chai. Tôi đã dùng phần mềm chỉnh sửa ảnh để xóa chữ lỗi, đồng thời tăng độ nét cho cánh tay robot để làm nổi bật chủ thể.
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <h4>Giai đoạn 3: Thiết kế hoàn thiện với Canva AI</h4>
+                    <p><strong>Mục tiêu:</strong> Tạo ảnh bìa (Cover) thu hút người đọc.</p>
+                    <div class="prompt-box">
+                        <strong>Prompt:</strong> "Professional blog banner for AI technology and environment, minimalist style."
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 15px 0;">
+                        <div style="overflow: hidden; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                            <img src="../assets/images/anh_bao_cao_bai_5/h3.png" alt="Minh chứng Canva 1" style="width: 100%; display: block; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="overflow: hidden; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                            <img src="../assets/images/anh_bao_cao_bai_5/h4.png" alt="Minh chứng Canva 2" style="width: 100%; display: block; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="human-touch">
+                        <strong style="color: #f59e0b;">Đóng góp cá nhân:</strong> Mặc dù AI phân tích layout tốt, nhưng khi chuyển sang tiếng Việt bị vỡ font chữ. Tôi đã tự tay thay thế font chữ, Việt hóa nội dung thành "AI: CHIẾN BINH MỚI CHỐNG RÁC THẢI NHỰA" và căn chỉnh lại khoảng cách dòng.
+                    </div>
+                </div>
+            </div>
+
+            <div class="report-section">
+                <h3 class="section-title">⚖️ III. So sánh & Phân tích hiệu quả</h3>
+                <div class="grid-cols-3">
+                    <div class="glass-card">
+                        <h4 style="color: #8ab4f8;">Google Gemini</h4>
+                        <p><strong style="color: #4ade80;">Điểm mạnh:</strong> Xử lý ngôn ngữ tự nhiên tiếng Việt xuất sắc. Cực kỳ hữu ích để "phá băng" ý tưởng, giải thích khái niệm phức tạp thành ngôn ngữ đại chúng, rút ngắn 70% thời gian nghiên cứu.</p>
+                        <p><strong style="color: #ef4444;">Hạn chế:</strong> Văn phong đôi lúc dập khuôn. Nếu người dùng không có kiến thức nền (domain knowledge) để hiệu đính, bài viết sẽ nông như Wikipedia.</p>
+                    </div>
+                    <div class="glass-card">
+                        <h4 style="color: #73f0c3;">DALL-E 3</h4>
+                        <p><strong style="color: #4ade80;">Điểm mạnh:</strong> Bám sát chi tiết prompt. Xử lý ánh sáng (lighting) và bố cục mang tính thẩm mỹ cao, tạo ra ảnh công nghệ chân thực.</p>
+                        <p><strong style="color: #ef4444;">Hạn chế:</strong> Hiện tượng "Hallucination" khi render văn bản (sinh ra ký tự vô nghĩa), buộc phải can thiệp bằng phần mềm bên ngoài.</p>
+                    </div>
+                    <div class="glass-card">
+                        <h4 style="color: #00e5ff;">Canva AI</h4>
+                        <p><strong style="color: #4ade80;">Điểm mạnh:</strong> Tính toán tỷ lệ thị giác (UI/UX) cực nhanh. Tự động đề xuất layout phối màu và nhận diện chủ thể ảnh rất tốt cho người không chuyên.</p>
+                        <p><strong style="color: #ef4444;">Hạn chế:</strong> Hỗ trợ đa ngôn ngữ (Typography) kém. Thường bị lỗi vỡ font khi nhập tiếng Việt có dấu.</p>
+                    </div>
+                </div>
+                <div class="glass-card" style="margin-top: 20px; text-align: center; border-color: #4facfe;">
+                    <h4 style="color: #4facfe;">Kết luận chung</h4>
+                    <p>AI hiện tại hoạt động cực kỳ hiệu quả dưới vai trò <strong>"Trợ lý khởi tạo" (Copilot)</strong>. Tuy nhiên, để sản phẩm đạt độ hoàn thiện cao, sự giám sát, tinh chỉnh và tư duy thẩm định của con người vẫn là yếu tố quyết định (chiếm hơn 50% giá trị dự án).</p>
+                </div>
+            </div>
+
+            <div class="report-section">
+                <h3 class="section-title">🛡️ IV. Vai trò của AI & Vấn đề Đạo đức</h3>
+                <div class="grid-cols-2">
+                    <div class="glass-card">
+                        <h4 style="color: #fff;">1. Sự thay đổi trong quy trình sáng tạo</h4>
+                        <p>Quy trình chuyển từ đường thẳng sang <strong>Vòng lặp tương tác (Iterative Loop)</strong>. Tôi đóng vai "Tổng biên tập", AI tạo nháp trong vài giây. Tôi phản biện, AI tinh chỉnh, và tôi hiệu đính cuối cùng. AI giải phóng sức lao động để tôi tập trung vào tư duy logic.</p>
+                    </div>
+                    <div class="glass-card" style="border-left: 4px solid #ef4444;">
+                        <h4 style="color: #ef4444;">2. Đạo đức: Bản quyền & Tính chính xác</h4>
+                        <p><strong>Bản quyền:</strong> AI tạo ảnh học từ dữ liệu có bản quyền. Để đảm bảo minh bạch, tôi luôn ghi chú: "Ảnh tạo bởi AI và được tinh chỉnh bởi con người".</p>
+                        <p><strong>Tính chính xác (Fake News):</strong> LLM có nguy cơ tự bịa đặt số liệu (Hallucination). Tôi tuyệt đối không dùng số liệu do AI cung cấp nếu chưa đối chiếu (cross-check) với nguồn tài liệu uy tín.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="report-section">
+                <h3 class="section-title">✨ V. Sản phẩm cuối cùng</h3>
+                
+                <div class="blog-article">
+                    <h2 class="blog-title">AI: CHIẾN BINH MỚI CHỐNG RÁC THẢI NHỰA</h2>
+                    <div class="blog-content">
+                        <p>Mỗi năm, thế giới thải ra hàng triệu tấn rác nhựa nhưng tỷ lệ tái chế thành công lại rất thấp. Nút thắt lớn nhất thường nằm ở khâu phân loại. Lời giải cho bài toán này đang dần được hé lộ nhờ một công nghệ đột phá: Trí tuệ Nhân tạo (AI), đặc biệt là Thị giác máy tính (Computer Vision).</p>
+                        
+                        <h3>1. "Đôi mắt" thần kỳ từ Computer Vision</h3>
+                        <p>Với rác thải bẹp dúm hay dính bẩn, các phương pháp phân loại quang học truyền thống thường "bó tay". Đây là lúc AI bước vào. Bằng cách sử dụng hệ thống camera cảm biến kết hợp thuật toán Học sâu (Deep Learning), máy móc có thể quét hàng nghìn khung hình mỗi giây. Chúng nhận diện màu sắc, hình dáng và đặc tính vật lý của từng mảnh rác trên băng chuyền với độ chính xác vượt trội.</p>
+                        
+                        <div class="blog-image-wrapper">
+                            <img src="../assets/images/anh_bao_cao_bai_5/h5.png" alt="Cánh tay robot AI phân loại rác">
+                            <p class="blog-caption">Hình ảnh hệ thống robot cảm biến tại nhà máy tái chế<br>(Ảnh tạo bằng DALL-E 3 và tinh chỉnh bởi tác giả).</p>
+                        </div>
+
+                        <h3>2. Huấn luyện mô hình: Dạy máy tính "nhìn" rác</h3>
+                        <p>Để AI phân biệt được chai PET tái chế và túi nilon bỏ đi, các kỹ sư sử dụng Mạng nơ-ron tích chập (CNN). AI được "học" qua hàng triệu bức ảnh rác thải ở mọi trạng thái, tất cả đều được dán nhãn (Data Labeling) thủ công cẩn thận. Qua quá trình huấn luyện, AI tự trích xuất được đặc trưng của từng loại nhựa, giúp hệ thống đạt độ chính xác lên tới hơn 95%.</p>
+
+                        <h3>3. Sự kết hợp hoàn hảo giữa AI và Robotics</h3>
+                        <p>Nhận diện được rác mới chỉ là bước đầu. Khi hệ thống Computer Vision phát hiện mục tiêu, nó lập tức tính toán tọa độ (X, Y, Z) và tốc độ băng chuyền. Mệnh lệnh được truyền tới các cánh tay robot hút chân không để gắp chính xác mảnh rác trong phần nghìn giây, cho phép hệ thống làm việc liên tục 24/7.</p>
+
+                        <div style="background: #f1f5f9; padding: 20px; border-left: 4px solid #2563eb; margin-top: 30px; border-radius: 4px;">
+                            <p style="margin: 0; font-weight: bold; color: #1e293b;">TỔNG KẾT</p>
+                            <p style="margin: 10px 0 0 0;">Sự kết hợp giữa AI và Robotics đang tạo ra một cuộc cách mạng trong khâu phân loại, tối ưu hóa cả tốc độ lẫn độ chính xác. Công nghệ này đang mở ra hy vọng về một nền kinh tế tuần hoàn, nơi rác thải nhựa không còn là gánh nặng mà thực sự trở thành nguồn tài nguyên giá trị.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- tsParticles Container -->
+    <div id="tsparticles"></div>
+
+    <!-- tsParticles Script -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2/tsparticles.preset.links.bundle.min.js"></script>
+    <script>
+        tsParticles.load("tsparticles", {
+            preset: "links",
+            background: {
+                color: { value: "transparent" }
+            },
+            particles: {
+                color: {
+                    value: ["#FFD700", "#4facfe"]
+                },
+                links: {
+                    color: "#1a5f7a",
+                    enable: true,
+                    opacity: 0.6,
+                    distance: 150
+                },
+                move: {
+                    enable: true,
+                    speed: 1.5,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    outModes: "out"
+                },
+                number: {
+                    density: {
+                        enable: true,
+                        area: 800
+                    },
+                    value: 50
+                },
+                opacity: {
+                    value: 0.8
+                },
+                size: {
+                    value: { min: 1, max: 3 }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
